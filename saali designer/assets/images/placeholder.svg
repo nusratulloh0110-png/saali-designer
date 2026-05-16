@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-labelledby="title desc">
+  <title id="title">saali.designer placeholder</title>
+  <desc id="desc">Decorative placeholder for product photography</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#F5F0E8"/>
+      <stop offset="1" stop-color="#E8E2D8"/>
+    </linearGradient>
+    <pattern id="ornament" width="88" height="88" patternUnits="userSpaceOnUse">
+      <path d="M44 10 78 44 44 78 10 44Z" fill="none" stroke="#C9A96E" stroke-width="1.5" opacity=".35"/>
+      <circle cx="44" cy="44" r="10" fill="none" stroke="#3D4F6B" stroke-width="1.5" opacity=".25"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="520" fill="url(#bg)"/>
+  <rect width="640" height="520" fill="url(#ornament)" opacity=".55"/>
+  <path d="M200 392V206c0-72 50-126 120-126s120 54 120 126v186" fill="none" stroke="#C4623A" stroke-width="12"/>
+  <path d="M236 392V212c0-50 34-88 84-88s84 38 84 88v180" fill="none" stroke="#C9A96E" stroke-width="5"/>
+  <path d="M320 205c30 28 58 53 58 91 0 44-35 78-58 96-23-18-58-52-58-96 0-38 28-63 58-91Z" fill="#FDFAF5" stroke="#3D4F6B" stroke-width="5"/>
+  <path d="M320 242c13 14 29 29 29 50 0 24-17 42-29 53-12-11-29-29-29-53 0-21 16-36 29-50Z" fill="#C9A96E" opacity=".75"/>
+</svg>

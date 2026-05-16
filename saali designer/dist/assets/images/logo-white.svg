@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-labelledby="title">
+  <title id="title">saali.designer white wordmark</title>
+  <g fill="none" stroke="#C9A96E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 8 82 48 48 88 14 48Z"/>
+    <path d="M48 23c12 11 22 20 22 34 0 15-12 27-22 34-10-7-22-19-22-34 0-14 10-23 22-34Z"/>
+    <path d="M27 48h42M48 27v42"/>
+  </g>
+  <text x="112" y="48" fill="#FDFAF5" font-family="Georgia, 'Times New Roman', serif" font-size="45" letter-spacing="0">saali</text>
+  <text x="112" y="82" fill="#C9A96E" font-family="Georgia, 'Times New Roman', serif" font-size="31" letter-spacing="0">.designer</text>
+</svg>

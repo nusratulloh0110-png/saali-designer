@@ -1,0 +1,14 @@
+{
+  "name": "saali-designer",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "validate": "node tools/validate-project.js",
+    "build": "node tools/build-netlify.js",
+    "telegram:webhook": "node tools/setup-telegram-webhook.js",
+    "deploy:check": "npm run validate && npm run build"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.7"
+  }
+}

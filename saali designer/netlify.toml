@@ -1,0 +1,25 @@
+[build]
+  command = "node tools/validate-project.js && node tools/build-netlify.js"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/catalog"
+  to = "/catalog.html"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, stale-while-revalidate=3600"
+
+[[headers]]
+  for = "/assets/data/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
