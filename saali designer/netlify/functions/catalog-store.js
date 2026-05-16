@@ -1,4 +1,5 @@
 const FALLBACK_PRODUCTS = require("../../assets/data/products.json");
+const { getDeployStore, getStore } = require("@netlify/blobs");
 
 const STORE_NAME = "saali-catalog";
 const PRODUCTS_KEY = "products";
@@ -97,14 +98,12 @@ async function prepareProducts(products) {
 }
 
 async function getBlobStore() {
-  const { getDeployStore, getStore } = await import("@netlify/blobs");
-  const deployContext = globalThis.Netlify?.context?.deploy?.context || process.env.CONTEXT;
-
-  if (deployContext === "production") {
-    return getStore(STORE_NAME, { consistency: "strong" });
-  }
-
-  return getDeployStore(STORE_NAME);
+  return getStore({
+    name: STORE_NAME,
+    consistency: "strong",
+    siteID: process.env.MY_SITE_ID,
+    token: process.env.NETLIFY_API_TOKEN
+  });
 }
 
 async function readProducts() {
